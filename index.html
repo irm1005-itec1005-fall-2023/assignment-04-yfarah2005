@@ -24,28 +24,15 @@
   <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
 </head>
 <body>
-
-  <!--
-
-    Assignment 04 - Finishing a Todo List App
-
-    Instructions:
-
-    Important checklist:
-
-    - Are users able to create and delete to do list items?
-    - Have you set a favicon? (included - but it's a rocket)
-    - Has a team member conducted a code review and left a GitHub Issue in your repo?
-    - Have you conducted a code review and left a GitHub Issue on your team member's repo?
-
-  -->
-
   <main>
-    <div id="app"></div>
+    <h1>Todo List 📝</h1>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="What needs to be done? 💬" required>
+      <button type="submit">+</button>
+    </form>
+    <ul id="todo-list"></ul>
+    <button id="clear-todos">Clear Todos</button>
+    <script src="script.js"></script>
   </main>
-
-  <!-- Add JavaScript File -->
-  <script src="./script.js"></script>
-
-</body>
 </html>
+
