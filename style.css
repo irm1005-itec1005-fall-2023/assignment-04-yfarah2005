@@ -87,3 +87,57 @@ li {
   text-decoration: line-through;
   color: #888;
 }
+
+#clear-todos {
+  background-color: #8338ec;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#clear-todos:hover {
+  background-color: #52B788;
+}
+
+body {
+  background-color: #000;
+  overflow: hidden;
+}
+
+@keyframes animatedBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(45deg, #389378, #6055a187, #ffffff);
+  background-size: 200% 200%;
+  animation: animatedBackground 10s ease infinite;
+}
+
+.empty-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
